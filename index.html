@@ -16,7 +16,7 @@
             }
         </style>
     </head>
-    <body class="flex flex-col items-center pt-32 min-h-screen bg-gray-200 bg-signal">
+    <body class="flex flex-col items-center pt-4 sm:pt-32 min-h-screen bg-gray-200 bg-signal">
         <div class="max-w-2xl mx-auto w-full shadow-2xl text-4xl rounded-lg overflow-hidden bg-blue-200">
             <div class="flex mx-auto rounded-t-lg text-6xl font-black font-sans">
                 <div class="w-1/5 flex items-center justify-center">B</div>
@@ -25,48 +25,48 @@
                 <div class="w-1/5 flex items-center justify-center">G</div>
                 <div class="w-1/5 flex items-center justify-center">O</div>
             </div>
-            <div class="border m-4 bg-white">
+            <div class="border m-1 sm:m-4 bg-white">
                 <div class="flex mx-auto -mt-px border border-gray-800">
-                    <div id="B1" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="I1" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="N1" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="G1" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="O1" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer"></div>
+                    <div id="B1" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="I1" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="N1" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="G1" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="O1" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer"></div>
                 </div>
                 <div class="flex mx-auto -mt-px border border-gray-800">
-                    <div id="B2" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="I2" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="N2" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="G2" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="O2" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer"></div>
+                    <div id="B2" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="I2" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="N2" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="G2" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="O2" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer"></div>
                 </div>
                 <div class="flex mx-auto -mt-px border border-gray-800">
-                    <div id="B3" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="I3" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="N3" class="w-1/5 token w-32 h-32 flex items-center justify-center border-r border-gray-800">
+                    <div id="B3" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="I3" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="N3" class="w-1/5 token h-24 sm:h-32 flex items-center justify-center border-r border-gray-800">
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="w-16 h-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
                     </div>
-                    <div id="G3" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="O3" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer"></div>
+                    <div id="G3" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="O3" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer"></div>
                 </div>
                 <div class="flex mx-auto -mt-px border border-gray-800">
-                    <div id="B4" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="I4" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="N4" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="G4" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="O4" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer"></div>
+                    <div id="B4" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="I4" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="N4" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="G4" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="O4" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer"></div>
                 </div>
                 <div class="flex mx-auto -mt-px border border-gray-800">
-                    <div id="B5" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="  hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="I5" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="N5" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="G5" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
-                    <div id="O5" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class=" hover:bg-gray-200 w-1/5 w-32 h-32 flex items-center justify-center cursor-pointer"></div>
+                    <div id="B5" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="  hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="I5" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="N5" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="G5" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class="hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer border-r border-gray-800"></div>
+                    <div id="O5" x-data="{ selected: false }" :class="{ 'token hover:token': selected }" @click="selected = !selected" class=" hover:bg-gray-200 w-1/5 h-24 sm:h-32 flex items-center justify-center cursor-pointer"></div>
                 </div>
             </div>
         </div>
-        <div class="flex items-center mt-4">
-            <button onclick="top.location.reload()" type="button" class="px-2 py-1 bg-red-400 rounded-lg text-2xl text-red-100 shadow-lg border-red-500 uppercase tracking-wider hover:bg-red-500">New Card</button>
+        <div class="flex items-center my-4">
+            <button title="Reloads the page" onclick="top.location.reload()" type="button" class="px-2 py-1 bg-red-400 rounded-lg text-2xl text-red-100 shadow-lg border-red-500 uppercase tracking-wider hover:bg-red-500">New Card</button>
         </div>
         <script src="./app.js"></script>
     </body>
