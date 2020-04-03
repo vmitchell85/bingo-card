@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bingo</title>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    </head>
+    <body class="flex flex-col items-center justify-center h-screen bg-gray-300">
+        <div class="flex mx-auto max-w-5xl w-full bg-blue-400">
+            <div class="w-1/5 border w-32 h-24 flex items-center justify-center text-3xl">B</div>
+            <div class="w-1/5 border w-32 h-24 flex items-center justify-center text-3xl">I</div>
+            <div class="w-1/5 border w-32 h-24 flex items-center justify-center text-3xl">N</div>
+            <div class="w-1/5 border w-32 h-24 flex items-center justify-center text-3xl">G</div>
+            <div class="w-1/5 border w-32 h-24 flex items-center justify-center text-3xl">O</div>
+        </div>
+        <div class="flex mx-auto max-w-5xl w-full -mt-px">
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="B1" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="I1" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="N1" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="G1" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="O1" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+        </div>
+        <div class="flex mx-auto max-w-5xl w-full -mt-px">
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="B2" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="I2" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="N2" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="G2" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="O2" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+        </div>
+        <div class="flex mx-auto max-w-5xl w-full -mt-px">
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="B3" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="I3" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div id="N3" class="w-1/5 bg-red-400 border w-32 h-32 flex items-center justify-center text-3xl">FREE</div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="G3" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="O3" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+        </div>
+        <div class="flex mx-auto max-w-5xl w-full -mt-px">
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="B4" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="I4" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="N4" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="G4" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="O4" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+        </div>
+        <div class="flex mx-auto max-w-5xl w-full -mt-px">
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="B5" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="I5" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="N5" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="G5" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+            <div x-data="{ selected: false }" :class="{ 'bg-red-400 hover:bg-red-300': selected }" @click="selected = !selected" id="O5" class="hover:bg-gray-200 w-1/5 bg-white border w-32 h-32 flex items-center justify-center text-3xl cursor-pointer"></div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
